@@ -39,7 +39,7 @@ describe '#Word' do
   end
 
   describe '.find' do
-    it "finds an album by id" do
+    it "finds a word by id" do
       word1 = Word.new({:text => "aardvark"})
       word1.save
       word2 = Word.new({:text => "abacus"})
