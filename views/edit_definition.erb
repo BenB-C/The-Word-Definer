@@ -1,11 +1,8 @@
 <h1>Edit definition for <%= @word.text %></h1>
 
 <form action="<%= @definition.id %>/edit_definition" method="post">
-  <div class="form-group">
-    <label for="definition_text">Definition</label>
-    <textarea name="definition_text" class="form-control" type="text large"><%= @definition.text %></textarea>
-  </div>
-  <button type="submit" class="btn">EDIT DEFINITION</button>
+  <textarea name="definition_text" class="form-control" type="text large"><%= @definition.text %></textarea>
+  <button type="submit" class="btn">SAVE CHANGES</button>
 </form>
 
 <form action="<%= @definition.id %>/delete_definition" method="post">

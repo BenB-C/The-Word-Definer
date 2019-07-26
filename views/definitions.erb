@@ -1,9 +1,7 @@
-<h1>The Word Definer</h1>
-
-<h2><%= @word.text %></h2>
+<h1><%= @word.text %></h1>
 
 <% if @definitions.any? %>
-  <p> [Click on a definition to edit or delete it.]</p>
+  <p><em>Click on a definition to edit or delete it.</em></p>
   <ol>
     <% @definitions.each do |definition| %>
       <li>
@@ -14,7 +12,7 @@
     <% end %>
   </ol>
 <% else %>
-  <p>There are currently no definitions to display.</p>
+  <p>There are currently no definitions for <em><%= @word.text %></em>.</p>
 <% end %>
 
 <p><a href="/words/<%= @word.id %>/definitions/new">Add a new definition</a><p>
