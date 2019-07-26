@@ -15,12 +15,6 @@ class Definition
     @@definitions.values
   end
 
-  def ==(other_definition)
-    (@text == other_definition.text) &&
-    (@word_id == other_definition.word_id) &&
-    (@id == other_definition.id)
-  end
-
   def self.clear
     @@definitions = {}
     @@next_id = 0
@@ -32,6 +26,12 @@ class Definition
 
   def self.find_by_word(word_id)
     @@definitions.values.select { |definition| definition.word_id == word_id }
+  end
+
+  def ==(other_definition)
+    (@text == other_definition.text) &&
+    (@word_id == other_definition.word_id) &&
+    (@id == other_definition.id)
   end
 
   def save
