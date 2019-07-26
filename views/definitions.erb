@@ -3,9 +3,14 @@
 <h2><%= @word.text %></h2>
 
 <% if @definitions.any? %>
+  <p> [Click on a definition to edit or delete it.]</p>
   <ol>
     <% @definitions.each do |definition| %>
-      <li><%= definition.text %></li>
+      <li>
+        <a href="/words/<%= @word.id %>/definitions/<%= definition.id %>">
+          <%= definition.text %>
+        </a>
+      </li>
     <% end %>
   </ol>
 <% else %>

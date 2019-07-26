@@ -43,7 +43,17 @@ post '/words/:id/definitions/new_definition' do
     :word_id => word.id
   })
   definition.save
-  # @definitions = Definition.all
-  # erb(:definitions)
   redirect to "/words/#{word.id}/definitions"
+end
+
+get '/words/:word_id/definitions/:id' do
+  @word = Word.find(params[:word_id].to_i)
+  @definition = Definition.find(params[:id].to_i)
+  erb(:edit_definition)
+end
+
+post '/words/:word_id/definitions/:id/edit_definition' do
+  @definition = Definition.find(params[:id].to_i)
+  @definition.update(params[:definition_text])
+  redirect to "/words/#{params[:word_id].to_i}/definitions"
 end
