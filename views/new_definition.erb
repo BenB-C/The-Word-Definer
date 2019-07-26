@@ -1,0 +1,12 @@
+<h1>Add a new definition for <%= @word.text %></h1>
+
+<form action="new_definition" method="post">
+  <div class="form-group">
+    <label for="definition_text">Definition</label>
+    <input name="definition_text" class="form-control" type="text" placeholder="Enter your definition">
+  </div>
+  <button type="submit" class="btn">ADD DEFINITION</button>
+</form>
+
+<p><a href="/words/<%= @word.id %>/definitions">Return to definitions for <%= @word.text %></a></p>
+<p><a href="/words">Return to word list</a></p>
