@@ -1,0 +1,16 @@
+<h1>The Word Definer</h1>
+
+<h2><%= @word.text %></h2>
+
+<% if @definitions.any? %>
+  <ol>
+    <% @definitions.each do |definition| %>
+      <li><%= definition.text %></li>
+    <% end %>
+  </ol>
+<% else %>
+  <p>There are currently no definitions to display.</p>
+<% end %>
+
+<p><a href="/words/<%= @word.id %>/definitions/new">Add a new definition</a><p>
+<p><a href="/words">Return to word list</a></p>
