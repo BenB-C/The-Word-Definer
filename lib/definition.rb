@@ -7,9 +7,8 @@ class Definition
 
   def initialize(attributes)
     @text = attributes[:text]
-    assert(attributes[:word_id].class == "Integer", "non-integer word_id")
     @word_id = attributes[:word_id]
-    @id = attributes[:id] || @next_id += 1
+    @id = attributes[:id] || @@next_id += 1
   end
 
   def self.all
