@@ -57,3 +57,9 @@ post '/words/:word_id/definitions/:id/edit_definition' do
   @definition.update(params[:definition_text])
   redirect to "/words/#{params[:word_id].to_i}/definitions"
 end
+
+post '/words/:word_id/definitions/:id/delete_definition' do
+  @definition = Definition.find(params[:id].to_i)
+  @definition.delete
+  redirect to "/words/#{params[:word_id].to_i}/definitions"
+end

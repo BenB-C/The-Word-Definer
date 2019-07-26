@@ -8,5 +8,9 @@
   <button type="submit" class="btn">EDIT DEFINITION</button>
 </form>
 
+<form action="<%= @definition.id %>/delete_definition" method="post">
+  <button type="submit" class="btn">DELETE DEFINITION</button>
+</form>
+
 <p><a href="/words/<%= @word.id %>/definitions">Return to definitions for <%= @word.text %></a></p>
 <p><a href="/words">Return to word list</a></p>
