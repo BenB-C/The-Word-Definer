@@ -1,8 +1,13 @@
 # The-Word-Definer
 
+
 #### Epicodus Ruby and Rails - Routing with Ruby Project - 2019.07.26
 
 #### By Ben Bennett-Cauchon
+
+## Heroku Deployment
+
+https://tranquil-ravine-67458.herokuapp.com/words
 
 ## Description
 
@@ -14,16 +19,25 @@ A learning website for kids on which children can write up a list of words they 
 | ------------- |:-------------:| -----:|
 | The homepage of the app lists all words | Homepage url in a browser | A list of all words added to the page |
 | When a word is clicked it leads to a page with the word's definitions | Click on word on homepage | A page with the word's definitions |
-| Words can be added to the list | Click on "Add a Word" link | A form for adding a new word |
-| Submitting new word form adds the word to the list | Click on "Submit Word" button | A list of all words added that includes the new word |
-| When viewing a word a user is able to add one or more definitions | Click on "Add Definition" link | Form for adding a definition for the word |
-| Submitting new definition form adds the definition to a word's definitions | Click on "Submit Definition" button in new definition form for a word | List of all definitions for the word that includes the new definition |
-| When viewing a word a user is able to update definitions | Click on "Update Definition" link next to a definition | Form which allows the definition to be edited |
-| When viewing a word a user is able to delete definitions | Click on "Delete Definition" link next to a definition | List of all definitions with the selected one deleted |
+| Words can be added to the list | Click on "Add a word" link | A form for adding a new word |
+| Submitting new word form adds the word to the list | Click on "ADD WORD" button | A list of all words added that includes the new word |
+| When viewing a word a user is able to add one or more definitions | Click on "Add a new definition" link | Form for adding a definition for the word |
+| Submitting new definition form adds the definition to a word's definitions | Click on "ADD DEFINITION" button in new definition form for a word | List of all definitions for the word that includes the new definition |
+| When viewing a word a user is able to update definitions | Click on definition | Form which allows the definition to be edited |
+| When viewing a word a user is able to delete definitions | Click on definition | List of all definitions with the selected one deleted |
 
 ## Setup/Installation Requirements
 
-* TODO
+* click on https://tranquil-ravine-67458.herokuapp.com/words
+ to see the page deployed to Heroku
+
+or
+
+* clone/download the repository
+* navigate to the directory in a terminal
+* run the commands
+  `bundle install && ruby app.rb`
+* open http://localhost:4567 in a web browser
 
 ## Known Bugs
 
@@ -35,7 +49,15 @@ If you find a bug, run into any issues, or have questions, ideas or concerns ple
 
 ## Technologies Used
 
-* TODO
+* ruby
+  * class variables and methods
+  * initializing with hashes
+  * embedded ruby in html
+* sinatra
+* rspec
+* capybary
+* pry
+* heroku
 
 ### License
 
