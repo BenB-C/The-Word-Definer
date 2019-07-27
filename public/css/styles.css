@@ -1,0 +1,50 @@
+.header {
+  font-family: monospace;
+  background-color: rgb(46, 163, 221);
+  color: white;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 4em;
+}
+
+.container {
+  font-size: 1.5em;
+}
+
+.add img {
+  width: 25px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.word-list {
+  list-style-type: circle;
+}
+
+.word-defined {
+  color: rgb(46, 163, 221);
+  font-family: monospace;
+  font-size: 2em;
+}
+
+ol li {
+  color: rgb(100, 105, 104);
+  font-size: .6em;
+  vertical-align: super;
+}
+
+.definition-text a{
+  color: black;
+  font-size: 1.5em
+}
+
+button {
+  background-color: rgb(46, 163, 221);
+  color: white;
+  margin-top: 15px;
+}
+
+form {
+  margin-bottom: 15px;
+}

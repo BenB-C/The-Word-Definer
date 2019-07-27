@@ -6,7 +6,9 @@ require 'pry'
 also_reload 'lib/**/*.rb'
 
 get '/' do
-  redirect to '/words'
+  # redirect to '/words'
+  @words = Word.all
+  erb(:words)
 end
 
 get '/words' do

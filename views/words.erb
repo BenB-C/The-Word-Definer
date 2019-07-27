@@ -1,9 +1,7 @@
-<h1>The Word Definer</h1>
-
 <p><em>Click on a word see its definitions.</em></p>
 
 <% if @words.any? %>
-  <ul>
+  <ul class="word-list">
     <% @words.each do |word| %>
       <li><a href="/words/<%= word.id %>/definitions"><%= word.text %></a></li>
     <% end %>
@@ -12,4 +10,4 @@
   <p>There are currently no words to display.</p>
 <% end %>
 
-<p><a href="/words/new">Add a new word</a></p>
+<p class="add"><a href="/words/new"><img src="/images/plus.png" alt="plus image">Add a new word</a></p>

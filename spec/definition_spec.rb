@@ -129,19 +129,4 @@ describe'#Definition' do
       expect(@definition.word).to eq @word
     end
   end
-  #
-  # describe '' do
-  #   it "" do
-  #
-  #     expect().to eq
-  #   end
-  # end
-  #
-  # describe '' do
-  #   it "" do
-  #
-  #     expect().to eq
-  #   end
-  # end
-
 end

@@ -1,13 +1,15 @@
-<h1><%= @word.text %></h1>
-
+<h1 class="word-defined"><%= @word.text %></h1>
+<hr>
 <% if @definitions.any? %>
   <p><em>Click on a definition to edit or delete it.</em></p>
   <ol>
     <% @definitions.each do |definition| %>
       <li>
-        <a href="/words/<%= @word.id %>/definitions/<%= definition.id %>">
-          <%= definition.text %>
-        </a>
+        <span class="definition-text">
+          <a href="/words/<%= @word.id %>/definitions/<%= definition.id %>">
+            <%= definition.text %>
+          </a>
+        </span>
       </li>
     <% end %>
   </ol>
@@ -15,5 +17,5 @@
   <p>There are currently no definitions for <em><%= @word.text %></em>.</p>
 <% end %>
 
-<p><a href="/words/<%= @word.id %>/definitions/new">Add a new definition</a><p>
+<p class="add"><a href="/words/<%= @word.id %>/definitions/new"><img src="/images/plus.png">Add a new definition</a><p>
 <p><a href="/words">Return to word list</a></p>

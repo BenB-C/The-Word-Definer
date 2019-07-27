@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>The Word Definer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= url('/css/styles.css') %>" />
   </head>
   <body>
+    <h1 class="header">The Word Definer</h1>
     <div class="container">
       <%= yield %>
     </div>
