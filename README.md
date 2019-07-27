@@ -24,7 +24,7 @@ A learning website for kids on which children can write up a list of words they 
 | When viewing a word a user is able to add one or more definitions | Click on "Add a new definition" link | Form for adding a definition for the word |
 | Submitting new definition form adds the definition to a word's definitions | Click on "ADD DEFINITION" button in new definition form for a word | List of all definitions for the word that includes the new definition |
 | When viewing a word a user is able to update definitions | Click on definition | Form which allows the definition to be edited |
-| When viewing a word a user is able to delete definitions | Click on definition | List of all definitions with the selected one deleted |
+| When viewing a word a user is able to delete definitions | Click on "DELETE DEFINITION" button after clicking on definition | List of all definitions with the selected one deleted |
 
 ## Setup/Installation Requirements
 
