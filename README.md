@@ -11,7 +11,7 @@ https://tranquil-ravine-67458.herokuapp.com/words
 
 ## Description
 
-A learning website for kids on which children can write up a list of words they don't know (but would like to learn) and then com up with their own definitions.
+A learning website for kids on which children can write up a list of words they don't know (but would like to learn) and then come up with their own definitions.
 
 ## Specs
 
